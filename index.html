@@ -6,8 +6,8 @@
   <title>Mochilas Personalizadas por Mayor | Clubes y Egresados</title>
 
   <!-- SEO BÁSICO -->
-  <meta name="description" content="Fabricamos mochilas, riñoneras y bolsos personalizados por mayor para clubes, egresados y equipos deportivos. Pedidos por cantidad.">
-  <meta name="keywords" content="mochilas personalizadas, mochilas por mayor, mochilas para egresados, bolsos deportivos personalizados">
+  <meta name="description" content="Fabricación de mochilas, riñoneras y bolsos personalizados por mayor para clubes, egresados y equipos deportivos.">
+  <meta name="keywords" content="mochilas personalizadas, mochilas por mayor, mochilas egresados, bolsos deportivos">
   <meta name="author" content="Mochilas Personalizadas">
 
   <style>
@@ -33,10 +33,10 @@
     header p {
       margin-top: 15px;
       font-size: 1.2rem;
-      opacity: 0.95;
       max-width: 700px;
       margin-left: auto;
       margin-right: auto;
+      opacity: 0.95;
     }
 
     main {
@@ -73,23 +73,46 @@
       text-align: center;
     }
 
-    .card h3 {
-      margin-top: 0;
-      color: #1e293b;
-    }
-
-    .beneficios {
+    /* GALERÍA PLACEHOLDERS */
+    .galeria {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
       gap: 20px;
       margin-top: 20px;
     }
 
-    .beneficio {
-      background: #f8fafc;
-      padding: 20px;
-      border-radius: 8px;
-      font-weight: 500;
+    .placeholder {
+      height: 220px;
+      background: linear-gradient(135deg, #e5e7eb, #f8fafc);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+    }
+
+    .placeholder::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.04),
+        rgba(0,0,0,0.04) 10px,
+        rgba(255,255,255,0.1) 10px,
+        rgba(255,255,255,0.1) 20px
+      );
+    }
+
+    .placeholder span {
+      position: relative;
+      z-index: 1;
+      font-weight: 600;
+      color: #1f2933;
+      text-align: center;
+      padding: 10px;
     }
 
     footer {
@@ -99,113 +122,6 @@
       color: #555;
     }
 
-    /* WHATSAPP */
+    /* BOTÓN WHATSAPP */
     .whatsapp {
-      position: fixed;
-      bottom: 22px;
-      right: 22px;
-      background: #25d366;
-      color: white;
-      padding: 15px 22px;
-      border-radius: 50px;
-      text-decoration: none;
-      font-weight: 600;
-      box-shadow: 0 6px 16px rgba(0,0,0,0.25);
-      z-index: 1000;
-    }
 
-    .whatsapp:hover {
-      background: #1ebe5d;
-    }
-  </style>
-</head>
-
-<body>
-
-  <header>
-    <h1>Mochilas Personalizadas por Mayor</h1>
-    <p>
-      Diseñamos y fabricamos mochilas, riñoneras y bolsos personalizados
-      para clubes, egresados, equipos deportivos y empresas.
-    </p>
-  </header>
-
-  <main>
-
-    <section>
-      <h2>Especialistas en pedidos por cantidad</h2>
-      <p>
-        Trabajamos exclusivamente por mayor. Coordinamos diseño,
-        materiales, colores y estampado para que tu producto represente
-        la identidad de tu grupo o institución.
-      </p>
-
-      <div class="beneficios">
-        <div class="beneficio">✔ Personalización total</div>
-        <div class="beneficio">✔ Producción por cantidad</div>
-        <div class="beneficio">✔ Materiales resistentes</div>
-        <div class="beneficio">✔ Envíos a todo el país</div>
-      </div>
-    </section>
-
-    <section>
-      <h2>Nuestros productos</h2>
-
-      <div class="grid">
-        <div class="card">
-          <h3>Mochilas</h3>
-          <p>Ideales para clubes, egresados y uso diario. Diferentes tamaños y diseños.</p>
-        </div>
-
-        <div class="card">
-          <h3>Riñoneras</h3>
-          <p>Prácticas y cómodas. Perfectas para eventos, viajes y actividades deportivas.</p>
-        </div>
-
-        <div class="card">
-          <h3>Bolsos deportivos</h3>
-          <p>Amplios y reforzados. Pensados para entrenamientos y competencias.</p>
-        </div>
-
-        <div class="card">
-          <h3>Bolsos de viaje</h3>
-          <p>Gran capacidad y durabilidad. Ideales para giras y traslados largos.</p>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <h2>¿Cómo trabajamos?</h2>
-      <ol>
-        <li>Nos contás qué producto necesitás y la cantidad</li>
-        <li>Definimos diseño, colores y detalles</li>
-        <li>Coordinamos tiempos de producción</li>
-        <li>Entrega a todo el país</li>
-      </ol>
-    </section>
-
-    <section>
-      <h2>Contacto directo</h2>
-      <p>
-        Escribinos por WhatsApp indicando:
-        <br>✔ Producto
-        <br>✔ Cantidad aproximada
-        <br>✔ Uso (club, egresados, equipo, empresa)
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    © 2026 · Mochilas personalizadas por mayor
-  </footer>
-
-  <!-- WHATSAPP CON MENSAJE PARA N8N -->
-  <a class="whatsapp"
-     href="https://wa.me/5491112345678?text=Hola,%20quiero%20cotizar%20productos%20personalizados%20por%20mayor.%0AProducto:%0ACantidad:%0AUso:"
-     target="_blank">
-     WhatsApp
-  </a>
-
-</body>
-</html>
