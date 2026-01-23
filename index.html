@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Somos Wendy | Fábrica de mochilas y bolsos personalizados</title>
+
+  <title>Somos Wendy | Fábrica Mayorista de Mochilas Personalizadas</title>
 
   <!-- SEO -->
-  <meta name="description" content="Somos Wendy, fábrica mayorista de mochilas y bolsos personalizados. Producción en cantidad desde 10 unidades para empresas, clubes e instituciones.">
-  <meta name="keywords" content="fábrica de mochilas, mochilas personalizadas, bolsos personalizados, mochilas por mayor, marroquinería mayorista">
+  <meta name="description" content="Somos Wendy. Fábrica de mochilas, bolsos, riñoneras y botineros personalizados por mayor. Producción desde 10 unidades con logo incluido.">
+  <meta name="keywords" content="mochilas personalizadas, mochilas por mayor, fábrica de mochilas, bolsos personalizados, marroquinería">
   <meta name="author" content="Somos Wendy">
 
   <style>
@@ -26,29 +27,22 @@
       text-align: center;
     }
 
-    .brand {
-      letter-spacing: 2px;
-      font-weight: 700;
-      opacity: 0.85;
-      margin-bottom: 12px;
-    }
-
     header h1 {
       margin: 0;
-      font-size: 2.6rem;
+      font-size: 2.8rem;
       font-weight: 800;
     }
 
     header p {
       margin-top: 18px;
-      font-size: 1.2rem;
+      font-size: 1.25rem;
       max-width: 850px;
       margin-left: auto;
       margin-right: auto;
       opacity: 0.95;
     }
 
-    .cta {
+    .cta-header {
       display: inline-block;
       margin-top: 40px;
       background: #25d366;
@@ -77,13 +71,13 @@
 
     section h2 {
       margin-top: 0;
-      font-size: 2rem;
+      font-size: 2.1rem;
       color: #0f172a;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
       gap: 30px;
       margin-top: 30px;
     }
@@ -131,60 +125,105 @@
       box-shadow: 0 8px 18px rgba(0,0,0,0.25);
       z-index: 999;
     }
+
+    /* ====== MOBILE VERSION CORTA ====== */
+    @media (max-width: 768px) {
+
+      .desktop-only {
+        display: none;
+      }
+
+      header {
+        padding: 60px 20px;
+      }
+
+      header h1 {
+        font-size: 1.9rem;
+      }
+
+      header p {
+        font-size: 1rem;
+      }
+
+      .mobile-points {
+        list-style: none;
+        padding: 0;
+        margin-top: 25px;
+        font-weight: 600;
+      }
+
+      .mobile-points li {
+        margin-bottom: 10px;
+      }
+
+      main {
+        margin: 30px auto;
+      }
+
+      section {
+        padding: 25px;
+      }
+    }
   </style>
 </head>
 
 <body>
 
 <header>
-  <div class="brand">SOMOS WENDY</div>
-  <h1>Fábrica de mochilas y bolsos personalizados</h1>
+  <h1>Somos Wendy</h1>
   <p>
-    Producción mayorista desde 10 unidades.<br>
-    Trabajamos con empresas, clubes, instituciones y revendedores.
+    Fábrica mayorista de mochilas y bolsos personalizados.  
+    Producción desde <strong>10 unidades</strong> con logo incluido.
   </p>
 
   <a 
-    href="https://wa.me/5491134848957?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados.%20Pedido%20desde%2010%20unidades."
-    class="cta"
+    href="https://wa.me/5491134848957?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados%20por%20mayor."
+    class="cta-header"
     target="_blank">
-    📲 Solicitar cotización por WhatsApp
+    📲 Cotizar por WhatsApp
   </a>
+
+  <!-- Puntos clave solo visibles en móvil -->
+  <ul class="mobile-points">
+    <li>✔ Fabricación propia</li>
+    <li>✔ Ideal para empresas y revendedores</li>
+    <li>✔ Entregas coordinadas</li>
+  </ul>
 </header>
 
 <main>
 
-  <section>
+  <section class="desktop-only">
     <h2>¿Para quién fabricamos?</h2>
     <div class="grid">
-      <div class="card">🏢 Empresas y organizaciones</div>
       <div class="card">🏟️ Clubes y equipos deportivos</div>
-      <div class="card">🎓 Instituciones educativas y egresados</div>
-      <div class="card">📦 Revendedores y marcas</div>
+      <div class="card">🏢 Empresas y organizaciones</div>
+      <div class="card">🛍️ Revendedores mayoristas</div>
+      <div class="card">🎓 Instituciones educativas</div>
     </div>
   </section>
 
-  <section>
-    <h2>Por qué elegirnos</h2>
+  <section class="desktop-only">
+    <h2>Por qué elegir Somos Wendy</h2>
     <div class="grid">
-      <div class="card">🏭 Fabricación propia sin intermediarios</div>
-      <div class="card">📦 Producción mayorista desde 10 unidades</div>
-      <div class="card">🏷️ Personalización de logo incluida</div>
-      <div class="card">🤝 Trato directo y seguimiento del pedido</div>
+      <div class="card">Producción propia sin intermediarios</div>
+      <div class="card">Pedidos por cantidad desde 10 unidades</div>
+      <div class="card">Personalización real con tu logo</div>
+      <div class="card">Trato directo y seguimiento</div>
     </div>
   </section>
 
-  <section>
+  <section class="desktop-only">
     <h2>Cómo trabajamos</h2>
     <div class="steps">
       <div class="step"><strong>1.</strong> Nos escribís por WhatsApp</div>
       <div class="step"><strong>2.</strong> Definimos producto y cantidad</div>
-      <div class="step"><strong>3.</strong> Te enviamos cotización y tiempos</div>
+      <div class="step"><strong>3.</strong> Enviamos propuesta y tiempos</div>
       <div class="step"><strong>4.</strong> Fabricamos y coordinamos entrega</div>
     </div>
   </section>
 
-  <section>
+  <section class="desktop-only">
     <h2>Productos que fabricamos</h2>
     <div class="grid">
       <div class="card">Mochilas personalizadas</div>
@@ -195,39 +234,22 @@
     </div>
   </section>
 
-  <section>
-    <h2>Condiciones de producción</h2>
-    <div class="grid">
-      <div class="card">📦 Pedidos desde 10 unidades</div>
-      <div class="card">🏷️ Con o sin logo</div>
-      <div class="card">🏭 Producción propia</div>
-      <div class="card">🚚 Coordinación de entrega</div>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contacto directo</h2>
-    <p>
-      Para cotizar de forma ágil, escribinos por WhatsApp indicando:<br><br>
-      ✔ Producto<br>
-      ✔ Cantidad aproximada<br>
-      ✔ Si es con logo<br>
-      ✔ Ciudad
-    </p>
-  </section>
-
 </main>
 
 <footer>
-  © 2026 · Somos Wendy · Fábrica mayorista de mochilas y bolsos · Argentina
+  © 2026 · Somos Wendy · Fábrica mayorista · Argentina
 </footer>
 
 <a 
-  href="https://wa.me/5491134848957?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados.%20Pedido%20desde%2010%20unidades."
+  href="https://wa.me/5491134848957?text=Hola,%20quiero%20cotizar%20productos%20personalizados%20por%20mayor."
   target="_blank"
   class="whatsapp">
   💬 WhatsApp
 </a>
+
+</body>
+</html>
+
 
 </body>
 </html>
