@@ -78,6 +78,156 @@
     section h2 {
       margin-top: 0;
       font-size: 2rem;
+      color: #0f172a;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      margin-top: 30px;
+    }
+
+    .card {
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      padding: 30px;
+      text-align: center;
+      background: #fafafa;
+      font-weight: 500;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .step {
+      background: #f8fafc;
+      padding: 25px;
+      border-radius: 14px;
+      border-left: 6px solid #0f172a;
+    }
+
+    footer {
+      text-align: center;
+      padding: 45px 20px;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .whatsapp {
+      position: fixed;
+      bottom: 22px;
+      right: 22px;
+      background: #25d366;
+      color: white;
+      padding: 16px 24px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+      z-index: 999;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="brand">SOMOS WENDY</div>
+  <h1>Fábrica de mochilas y bolsos personalizados</h1>
+  <p>
+    Producción mayorista desde 10 unidades.<br>
+    Trabajamos con empresas, clubes, instituciones y revendedores.
+  </p>
+
+  <a 
+    href="https://wa.me/5491134848957?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados.%20Pedido%20desde%2010%20unidades."
+    class="cta"
+    target="_blank">
+    📲 Solicitar cotización por WhatsApp
+  </a>
+</header>
+
+<main>
+
+  <section>
+    <h2>¿Para quién fabricamos?</h2>
+    <div class="grid">
+      <div class="card">🏢 Empresas y organizaciones</div>
+      <div class="card">🏟️ Clubes y equipos deportivos</div>
+      <div class="card">🎓 Instituciones educativas y egresados</div>
+      <div class="card">📦 Revendedores y marcas</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Por qué elegirnos</h2>
+    <div class="grid">
+      <div class="card">🏭 Fabricación propia sin intermediarios</div>
+      <div class="card">📦 Producción mayorista desde 10 unidades</div>
+      <div class="card">🏷️ Personalización de logo incluida</div>
+      <div class="card">🤝 Trato directo y seguimiento del pedido</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Cómo trabajamos</h2>
+    <div class="steps">
+      <div class="step"><strong>1.</strong> Nos escribís por WhatsApp</div>
+      <div class="step"><strong>2.</strong> Definimos producto y cantidad</div>
+      <div class="step"><strong>3.</strong> Te enviamos cotización y tiempos</div>
+      <div class="step"><strong>4.</strong> Fabricamos y coordinamos entrega</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Productos que fabricamos</h2>
+    <div class="grid">
+      <div class="card">Mochilas personalizadas</div>
+      <div class="card">Bolsos deportivos y de viaje</div>
+      <div class="card">Riñoneras</div>
+      <div class="card">Botineros</div>
+      <div class="card">Portacelulares</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Condiciones de producción</h2>
+    <div class="grid">
+      <div class="card">📦 Pedidos desde 10 unidades</div>
+      <div class="card">🏷️ Con o sin logo</div>
+      <div class="card">🏭 Producción propia</div>
+      <div class="card">🚚 Coordinación de entrega</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Contacto directo</h2>
+    <p>
+      Para cotizar de forma ágil, escribinos por WhatsApp indicando:<br><br>
+      ✔ Producto<br>
+      ✔ Cantidad aproximada<br>
+      ✔ Si es con logo<br>
+      ✔ Ciudad
+    </p>
+  </section>
+
+</main>
+
+<footer>
+  © 2026 · Somos Wendy · Fábrica mayorista de mochilas y bolsos · Argentina
+</footer>
+
+<a 
+  href="https://wa.me/5491134848957?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados.%20Pedido%20desde%2010%20unidades."
+  target="_blank"
+  class="whatsapp">
+  💬 WhatsApp
+</a>
 
 </body>
 </html>
