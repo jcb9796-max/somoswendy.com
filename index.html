@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Somos Wendy | Fábrica Mayorista de Mochilas Personalizadas</title>
+  <title>Somos Wendy | Mochilas y Bolsos a Precio de Fábrica</title>
 
   <!-- SEO -->
-  <meta name="description" content="Somos Wendy. Fábrica de mochilas, bolsos, riñoneras y botineros personalizados por mayor. Producción desde 10 unidades con logo incluido.">
-  <meta name="keywords" content="mochilas personalizadas, mochilas por mayor, fábrica de mochilas, bolsos personalizados, marroquinería">
+  <meta name="description" content="Somos Wendy. Fábrica de mochilas y bolsos. Venta por mayor y menor. Personalización de logos. Envíos a todo el país.">
+  <meta name="keywords" content="mochilas por mayor, mochilas por menor, fábrica de mochilas, bolsos deportivos, mochilas personalizadas">
   <meta name="author" content="Somos Wendy">
 
   <style>
@@ -36,7 +36,7 @@
     header p {
       margin-top: 18px;
       font-size: 1.25rem;
-      max-width: 850px;
+      max-width: 900px;
       margin-left: auto;
       margin-right: auto;
       opacity: 0.95;
@@ -73,6 +73,7 @@
       margin-top: 0;
       font-size: 2.1rem;
       color: #0f172a;
+      text-align: center;
     }
 
     .grid {
@@ -91,18 +92,16 @@
       font-weight: 500;
     }
 
-    .steps {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 25px;
-      margin-top: 30px;
+    .price {
+      font-weight: 700;
+      margin-top: 10px;
     }
 
-    .step {
-      background: #f8fafc;
-      padding: 25px;
-      border-radius: 14px;
-      border-left: 6px solid #0f172a;
+    .note {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: 20px;
     }
 
     footer {
@@ -126,34 +125,17 @@
       z-index: 999;
     }
 
-    /* ====== MOBILE SIMPLIFICADO ====== */
     @media (max-width: 768px) {
-
-      .desktop-only {
-        display: none;
-      }
-
       header {
         padding: 60px 20px;
       }
 
       header h1 {
-        font-size: 1.9rem;
+        font-size: 2rem;
       }
 
       header p {
         font-size: 1rem;
-      }
-
-      .mobile-points {
-        list-style: none;
-        padding: 0;
-        margin-top: 25px;
-        font-weight: 600;
-      }
-
-      .mobile-points li {
-        margin-bottom: 10px;
       }
 
       main {
@@ -170,79 +152,80 @@
 <body>
 
 <header>
-  <h1>Somos Wendy</h1>
+  <h1>Mochilas y Bolsos a Precio de Fábrica</h1>
   <p>
-    Fábrica mayorista de mochilas y bolsos personalizados.<br>
-    Producción desde <strong>10 unidades</strong> con logo incluido.
+    Venta por <strong>mayor y menor</strong> · Personalización de logos · Envíos a todo el país<br>
+    Precios directos de fábrica · Atención por WhatsApp
   </p>
 
-  <!-- LINK DE WHATSAPP UNIFICADO -->
   <a 
-    href="https://wa.me/5491165920260?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados%20por%20mayor."
+    href="https://wa.me/5491165920260?text=Hola,%20quiero%20recibir%20el%20catálogo%20y%20precios%20de%20mochilas%20y%20bolsos."
     class="cta-header"
     target="_blank">
-    📲 Cotizar por WhatsApp
+    📲 Pedir catálogo por WhatsApp
   </a>
-
-  <ul class="mobile-points">
-    <li>✔ Fabricación propia</li>
-    <li>✔ Empresas y revendedores</li>
-    <li>✔ Entregas coordinadas</li>
-  </ul>
 </header>
 
 <main>
 
-  <section class="desktop-only">
-    <h2>¿Para quién fabricamos?</h2>
+  <section>
+    <h2>Productos principales</h2>
     <div class="grid">
-      <div class="card">🏢 Empresas</div>
-      <div class="card">🛍️ Revendedores</div>
-      <div class="card">🏟️ Clubes</div>
-      <div class="card">🎓 Instituciones educativas</div>
+      <div class="card">
+        Mochilas
+        <div class="price">Desde $6.000 por mayor</div>
+      </div>
+      <div class="card">
+        Bolsos deportivos
+        <div class="price">Desde $8.000 por mayor</div>
+      </div>
+      <div class="card">
+        Mochilas mini
+        <div class="price">Desde $5.000 por mayor</div>
+      </div>
+      <div class="card">
+        Botineros
+        <div class="price">Desde $6.000 por mayor</div>
+      </div>
+      <div class="card">
+        Bolsos de viaje
+        <div class="price">Desde $13.000 por mayor</div>
+      </div>
+      <div class="card">
+        Línea ecocuero
+        <div class="price">Desde $8.000 por mayor</div>
+      </div>
     </div>
+
+    <p class="note">
+      💬 Venta por menor disponible (+30%) · 📦 Envíos a todo el país (no incluidos en el precio)
+    </p>
   </section>
 
-  <section class="desktop-only">
-    <h2>Por qué elegir Somos Wendy</h2>
-    <div class="grid">
-      <div class="card">Producción propia</div>
-      <div class="card">Pedidos desde 10 unidades</div>
-      <div class="card">Personalización con logo</div>
-      <div class="card">Atención directa</div>
-    </div>
-  </section>
-
-  <section class="desktop-only">
-    <h2>Cómo trabajamos</h2>
-    <div class="steps">
-      <div class="step"><strong>1.</strong> Contacto por WhatsApp</div>
-      <div class="step"><strong>2.</strong> Definimos producto y cantidad</div>
-      <div class="step"><strong>3.</strong> Cotización y tiempos</div>
-      <div class="step"><strong>4.</strong> Producción y entrega</div>
-    </div>
-  </section>
-
-  <section class="desktop-only">
-    <h2>Productos</h2>
-    <div class="grid">
-      <div class="card">Mochilas</div>
-      <div class="card">Bolsos deportivos</div>
-      <div class="card">Bolsos de viaje</div>
-      <div class="card">Riñoneras</div>
-      <div class="card">Botineros</div>
+  <section>
+    <h2>Personalización con tu logo</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Trabajamos con empresas, marcas, emprendedores y clubes.
+      Personalizamos mochilas y bolsos para potenciar tu identidad.
+    </p>
+    <div style="text-align:center; margin-top:30px;">
+      <a 
+        href="https://wa.me/5491165920260?text=Hola,%20quiero%20personalizar%20productos%20con%20mi%20logo."
+        class="cta-header"
+        target="_blank">
+        Consultar personalización
+      </a>
     </div>
   </section>
 
 </main>
 
 <footer>
-  © 2026 · Somos Wendy · Fábrica mayorista · Argentina
+  © 2026 · Somos Wendy · Fábrica de mochilas y bolsos · Argentina
 </footer>
 
-<!-- BOTÓN FLOTANTE WHATSAPP (MISMO LINK) -->
 <a 
-  href="https://wa.me/5491165920260?text=Hola,%20quiero%20cotizar%20mochilas%20o%20bolsos%20personalizados%20por%20mayor."
+  href="https://wa.me/5491165920260?text=Hola,%20quiero%20recibir%20el%20catálogo%20y%20precios."
   target="_blank"
   class="whatsapp">
   💬 WhatsApp
@@ -250,4 +233,3 @@
 
 </body>
 </html>
-
